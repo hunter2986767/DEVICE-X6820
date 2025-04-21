@@ -22,6 +22,9 @@ AB_OTA_PARTITIONS += \
     product
 BOARD_USES_RECOVERY_AS_BOOT := true
 
+
+RECOVERY_RAMDISK_COMPRESSOR := gzip
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
