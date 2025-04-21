@@ -1,6 +1,6 @@
 # DEVICE TREE FOR INFINIX ZERO ULTRA (X6820)
 ## Device image
-(https://images.app.goo.gl/HyrzqfJ7bgRrtxKh8)
+![INFINIX ZERO ULTRA](https://fdn2.gsmarena.com/vv/pics/infinix/infinix-zero-ultra-1.jpg)
 
 ## Device specification
 Basic   | Spec Sheet
