@@ -79,9 +79,8 @@ TARGET_KERNEL_CONFIG := Infinix-X6820_defconfig
 TARGET_KERNEL_SOURCE := kernel/infinix/Infinix-X6820
 
 
-# DTB - prebuilt
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/dtb.img
-BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img)
 
 # Build Rules
 BUILD_BROKEN_DUP_RULES := true
@@ -97,7 +96,6 @@ TW_PREPARE_DATA_MEDIA_EARLY := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
-TARGET_NO_KERNEL := true
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
