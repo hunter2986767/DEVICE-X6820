@@ -80,7 +80,7 @@ TARGET_KERNEL_SOURCE := kernel/infinix/Infinix-X6820
 
 
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img)
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 
 # Build Rules
 BUILD_BROKEN_DUP_RULES := true
