@@ -1,8 +1,10 @@
 <!--
     Input:
-        manifest_isphal.xml
-        vendor.fptool.fingerprint-service.xml
-        vendor.transsion.hardware.hyperion.hap_device.xml
+        manifest_apuware_apusys.xml
+        manifest_apuware_xrp.xml
+        manifest_apuware_utils.xml
+        manifest_fingerprint.xml
+        vendor.transsion.hardware.security.hap_device.xml
         manifest_tranlog.xml
         manifest_tranlogconfig.xml
         nfc_manifest.xml
@@ -53,6 +55,16 @@
             <instance>default</instance>
         </interface>
         <fqname>@7.0::IEffectsFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <version>2.1</version>
+        <interface>
+            <name>IBiometricsFingerprint</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@2.1::IBiometricsFingerprint/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
@@ -261,6 +273,16 @@
         <fqname>@2.0::ISensors/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.soundtrigger</name>
+        <transport>hwbinder</transport>
+        <version>2.3</version>
+        <interface>
+            <name>ISoundTriggerHw</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@2.3::ISoundTriggerHw/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -293,16 +315,6 @@
         <fqname>@2.0::IThermal/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.fptool.fingerprint</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IFptoolFingerprint</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::IFptoolFingerprint/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.mediatek.hardware.aee</name>
         <transport>hwbinder</transport>
         <version>1.1</version>
@@ -325,6 +337,36 @@
         <fqname>@2.0::IApmService/apm_hidl_service</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.mediatek.hardware.apuware.apusys</name>
+        <transport>hwbinder</transport>
+        <version>2.1</version>
+        <interface>
+            <name>INeuronApusys</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@2.1::INeuronApusys/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.apuware.utils</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IApuwareUtils</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@2.0::IApuwareUtils/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.apuware.xrp</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>INeuronXrp</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@2.0::INeuronXrp/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.mediatek.hardware.atci</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -343,6 +385,16 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.2::IBluetoothAudioProvidersFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.camera.atms</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IATMs</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IATMs/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.camera.bgservice</name>
@@ -582,7 +634,7 @@
         <fqname>@1.0::INxpNfcLegacy/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.transsion.hardware.hyperion.hap</name>
+        <name>vendor.transsion.hardware.security.hap</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
