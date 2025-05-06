@@ -155,10 +155,6 @@ TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_HAS_MTP := true
 TW_MTP_DEVICE := /dev/mtp_usb
 
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_Infinix-X6820
-TARGET_RECOVERY_DEVICE_MODULES := libinit_Infinix-X6820
-
 # Debug 
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
